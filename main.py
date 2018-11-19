@@ -12,7 +12,7 @@ COMMENT_FIELD_NAME_PREFIX='Comment'
 
 # Pre-compile the regex to make things faster
 field_name_re = re.compile(r'History/(ArtifactHistory|HistoryChangeSet)/[0-9]+/.*')
-# Values that we woush like to push to output file
+# Values that we would like to push to output file
 output_data = []
 with open(SOURCE_FILE_NAME, 'r') as csvfile:
     reader = csv.DictReader(csvfile)
